@@ -215,3 +215,31 @@ public static System.Text.Encoding GetCode(byte[] bytes)
 
 
 https://dobon.net/vb/dotnet/string/detectcode.html
+
+https://blog.csdn.net/qq_43024228/article/details/122719840
+
+
+How to use
+```C#
+byte[] bs = File.ReadAllBytes(path + fileName);
+Encoding enc = GetCode(bs);
+
+if(enc == Encoding.GetEncoding(932))
+{
+    string str = string.Empty;
+    using(StreamReader sr = new(path + fileName))
+    {
+        str = sr.ReadToEnd();
+        sr.Close();
+    }
+}
+
+Encoding newEncoding = new UTF8Encoding(true);
+using(StreamReader sw = new(path + fileName, false, newEncoding))
+{
+    sw.Write(str);
+    sw.Close();
+}
+
+
+```
