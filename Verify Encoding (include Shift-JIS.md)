@@ -2,8 +2,7 @@
 
 
 
-```c#
-
+```C#
 /// <summary>
 /// 文字コードを判別する
 /// </summary>
@@ -210,5 +209,4 @@ public static System.Text.Encoding GetCode(byte[] bytes)
 
     return null;
 }
-
 ```
