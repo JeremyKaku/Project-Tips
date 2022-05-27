@@ -1,6 +1,8 @@
 
 
+ここからは、BOMが付いていないデータの文字コードを判別する方法を紹介します。ただし、あくまで文字コードを推測するだけで、正確に判別することはできません。
 
+次に示すコードは、私がJcode.pmのgetcodeメソッドを参考にして書かせていただいた（移植したつもり）メソッドです。バイナリ配列で渡されたデータが、JIS、Shift-JIS、EUC、UTF-8（もしくはASCII）のいずれであるかを判別し、結果をEncodingオブジェクトで返します。
 
 ```C#
 /// <summary>
@@ -210,3 +212,6 @@ public static System.Text.Encoding GetCode(byte[] bytes)
     return null;
 }
 ```
+
+
+https://dobon.net/vb/dotnet/string/detectcode.html
