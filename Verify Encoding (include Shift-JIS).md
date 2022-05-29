@@ -8,14 +8,6 @@
 /// <summary>
 /// 文字コードを判別する
 /// </summary>
-/// <remarks>
-/// Jcode.pmのgetcodeメソッドを移植したものです。
-/// Jcode.pm(http://openlab.ring.gr.jp/Jcode/index-j.html)
-/// Jcode.pmの著作権情報
-/// Copyright 1999-2005 Dan Kogai <dankogai@dan.co.jp>
-/// This library is free software; you can redistribute it and/or modify it
-///  under the same terms as Perl itself.
-/// </remarks>
 /// <param name="bytes">文字コードを調べるデータ</param>
 /// <returns>適当と思われるEncodingオブジェクト。
 /// 判断できなかった時はnull。</returns>
