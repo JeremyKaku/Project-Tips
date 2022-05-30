@@ -7,6 +7,10 @@ If there is a byte in the file whose value is equal to 0, then the file is not a
 otherwise, If there is no byte in the file whose value is 0, it can be determined that the file is a text file.
 https://www.cnblogs.com/criedshy/archive/2010/05/24/1742918.html
 
+others:
+https://stackoverflow.com/questions/910873/how-can-i-determine-if-a-file-is-binary-or-text-in-c
+https://stackoverflow.com/questions/4744890/c-sharp-check-if-file-is-text-based
+
 
 ```C#
 
