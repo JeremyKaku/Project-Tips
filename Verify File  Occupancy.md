@@ -2,7 +2,7 @@ Determine file occupancy status
 
 ```C#
 
-public static bool isFileInUse(string)
+public static bool isFileInUse(string fileName)
 {
   bool inUse = true;
   FileStream fs = null;
