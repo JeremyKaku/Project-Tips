@@ -1,3 +1,22 @@
+
+2022/6/19
+FileForm => byte[]
+
+```C#
+
+using (var fileStream = FileForm.OpenReadStream)
+{
+    byte[] = new byte[FileForm.Length];
+    FileStream.Read(bytes, 0, FileForm.Length)
+    
+    //others
+}
+
+```
+
+
+
+-------------------------------------------------------------------
 1. 2022/5/12
 upload file:
 create temporary file in server =>  convert to byte[] to DB
